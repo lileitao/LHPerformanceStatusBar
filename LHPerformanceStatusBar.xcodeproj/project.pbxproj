@@ -119,7 +119,6 @@
 		524DFC981E114BC70026199B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F221F69D25FB421F00B57E88 /* Category */,
 				524DFCA81E115B170026199B /* LHPerformanceTypes.h */,
 				524DFC9B1E114BC70026199B /* LHPerformanceMonitorService.h */,
 				524DFC9C1E114BC70026199B /* LHPerformanceMonitorService.m */,
@@ -131,18 +130,11 @@
 				524DFC9E1E114BC70026199B /* LHPerformanceStatusBar.m */,
 				524DFC9F1E114BC70026199B /* LHPerformanceUtil.h */,
 				524DFCA01E114BC70026199B /* LHPerformanceUtil.m */,
-			);
-			path = Classes;
-			sourceTree = SOURCE_ROOT;
-		};
-		F221F69D25FB421F00B57E88 /* Category */ = {
-			isa = PBXGroup;
-			children = (
 				F221F69E25FB427900B57E88 /* UIViewController+GSPerformanceNotify.h */,
 				F221F69F25FB427900B57E88 /* UIViewController+GSPerformanceNotify.m */,
 			);
-			path = Category;
-			sourceTree = "<group>";
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
