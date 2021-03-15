@@ -163,6 +163,7 @@
 
 + (void)runWithDelegate:(id <GSFPSChangeDelegate>)delegate{
     [[LHPerformanceMonitorService sharedService] _run];
+    NSLog(@"nihoa");
     [LHPerformanceMonitorService sharedService].delegate = delegate;
 }
 
