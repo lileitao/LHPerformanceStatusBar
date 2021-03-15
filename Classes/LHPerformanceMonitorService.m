@@ -57,7 +57,7 @@
         _displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(envokeDisplayLink:)];
         _displayLink.paused = YES;
         [_displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
-        _fpsStatusBar = [[LHPerformanceStatusBar alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 20.0)];
+        _fpsStatusBar = [[LHPerformanceStatusBar alloc] initWithFrame:CGRectMake(0, 5, [UIScreen mainScreen].bounds.size.width, 20.0)];
         //Notification
         [[NSNotificationCenter defaultCenter] addObserver: self
                                                  selector: @selector(applicationDidBecomeActiveNotification)
@@ -163,7 +163,6 @@
 
 + (void)runWithDelegate:(id <GSFPSChangeDelegate>)delegate{
     [[LHPerformanceMonitorService sharedService] _run];
-    NSLog(@"nihoa");
     [LHPerformanceMonitorService sharedService].delegate = delegate;
 }
 

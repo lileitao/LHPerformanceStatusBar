@@ -29,8 +29,7 @@ static NSString *strKey = @"strKey";
     NSString *memoryStr = [NSString stringWithFormat:@"%d", (int)[self averageFromArray:self.Memory]];
     NSString *cpuStr = [NSString stringWithFormat:@"%.2f%%", (float)[self averageFromArray:self.CPU]];
     NSDictionary *performanceDic = @{@"fpsStr":fpsStr, @"memoryStr":memoryStr, @"cpuStr":cpuStr};
-        // 异步回调所有的性能，传输给大数据方面；
-    NSLog(@"self.FPS = %@", self.FPS);
+    // 异步回调所有的性能，传输给大数据方面；
     if (self.FPS.count && self.Memory.count && self.CPU.count) {
         if ([self respondsToSelector:NSSelectorFromString(@"performanceNotifyWithDic:")]) {
             [self performSelector:NSSelectorFromString(@"performanceNotifyWithDic:") withObject:performanceDic];

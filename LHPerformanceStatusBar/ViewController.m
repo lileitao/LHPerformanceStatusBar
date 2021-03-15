@@ -38,8 +38,6 @@
     NSLog(@"走了主类的viewWillDisappear");
 }
 #pragma mark - notify
-
-
 - (void)dealloc
 {
     NSLog(@"走了 - %@", NSStringFromClass([self class]));
