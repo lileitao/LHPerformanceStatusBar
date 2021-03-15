@@ -22,17 +22,18 @@ Replace statusbar with a new bar to show realtime performance
 Cocoapod
 
 ```
-pod LHPerformanceStatusBar
+pod 'LHPerformanceStatusBar',:git => 'https://github.com/lileitao/LHPerformanceStatusBar.git', :configurations => ['Debug']
 ```
 
 ## Usage
 In `viewDidAppear` or somewhere where the keyWindow is loaded
 
 ```
-- (void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-    [LHPerformanceMonitorService run];
-}
+//在项目中添加一个UIViewController的分类，在分类中实现以下方法：
+- (void)performanceNotifyWithDic:(NSDictionary *)dic;
+// 性能指标项：fpsStr：fps， memoryStr:内存占比； cpuStr:cpu占比；
+// dic中存储的是每个页面的性能指标平均值。进入页面开始统计，将要离开页面的时候会计算性能的平均值，回调该方法，以字典形式传输；
+
 ```
 ## Author
 
