@@ -61,6 +61,7 @@ static NSString *strKey = @"strKey";
 
 #pragma mark - load
 + (void)load {
+#ifdef DEBUG
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         SEL originalSelector = @selector(viewDidAppear:);
@@ -71,6 +72,9 @@ static NSString *strKey = @"strKey";
         SEL swizzledSelector3 = @selector(performanceViewWillDisappear:);
         [self exchangeInstanceMethod:[self class] method1Sel:originalSelector3 method2Sel:swizzledSelector3];
     });
+#else
+#endif
+
 }
 + (void)exchangeInstanceMethod:(Class)anClass method1Sel:(SEL)method1Sel method2Sel:(SEL)method2Sel {
     
