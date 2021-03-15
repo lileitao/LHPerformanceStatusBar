@@ -117,6 +117,10 @@
     CGFloat cpu = [LHPerformanceUtil cpuUsage];
     self.fpsStatusBar.cpuLabel.text = [NSString stringWithFormat:@"CPU:%.2f%%",cpu];
     self.fpsStatusBar.cpuLabel.state = [self labelStateWith:LHPerformanceMonitorCPU value:cpu];
+    
+    if (self.delegate && [self.delegate respondsToSelector:@selector(changeWith:memory:CPU:)]) {
+        [self.delegate changeWith:fps memory:memory CPU:cpu];
+    }
 }
 
 #pragma mark - Calculator
@@ -155,6 +159,11 @@
 
 + (void)run{
     [[LHPerformanceMonitorService sharedService] _run];
+}
+
++ (void)runWithDelegate:(id <GSFPSChangeDelegate>)delegate{
+    [[LHPerformanceMonitorService sharedService] _run];
+    [LHPerformanceMonitorService sharedService].delegate = delegate;
 }
 
 + (void)stop{

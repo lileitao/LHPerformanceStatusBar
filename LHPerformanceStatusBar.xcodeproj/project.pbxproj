@@ -18,6 +18,16 @@
 		524DFCA31E114BC70026199B /* LHPerformanceStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 524DFC9E1E114BC70026199B /* LHPerformanceStatusBar.m */; };
 		524DFCA41E114BC70026199B /* LHPerformanceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 524DFCA01E114BC70026199B /* LHPerformanceUtil.m */; };
 		524DFCA71E114FAF0026199B /* LHPerformanceConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 524DFCA61E114FAF0026199B /* LHPerformanceConfig.m */; };
+		F221F6A025FB427900B57E88 /* UIViewController+GSPerformanceNotify.m in Sources */ = {isa = PBXBuildFile; fileRef = F221F69F25FB427900B57E88 /* UIViewController+GSPerformanceNotify.m */; };
+		F221F6A325FB47A300B57E88 /* UIViewController+GSPerformanceNotify.h in Sources */ = {isa = PBXBuildFile; fileRef = F221F69E25FB427900B57E88 /* UIViewController+GSPerformanceNotify.h */; };
+		F221F6A425FB47A300B57E88 /* LHPerformanceTypes.h in Sources */ = {isa = PBXBuildFile; fileRef = 524DFCA81E115B170026199B /* LHPerformanceTypes.h */; };
+		F221F6A525FB47A300B57E88 /* LHPerformanceMonitorService.h in Sources */ = {isa = PBXBuildFile; fileRef = 524DFC9B1E114BC70026199B /* LHPerformanceMonitorService.h */; };
+		F221F6A625FB47A300B57E88 /* LHPerformanceConfig.h in Sources */ = {isa = PBXBuildFile; fileRef = 524DFCA51E114FAF0026199B /* LHPerformanceConfig.h */; };
+		F221F6A725FB47A300B57E88 /* LHPerformanceLabel.h in Sources */ = {isa = PBXBuildFile; fileRef = 524DFC991E114BC70026199B /* LHPerformanceLabel.h */; };
+		F221F6A825FB47A300B57E88 /* LHPerformanceStatusBar.h in Sources */ = {isa = PBXBuildFile; fileRef = 524DFC9D1E114BC70026199B /* LHPerformanceStatusBar.h */; };
+		F221F6A925FB47A300B57E88 /* LHPerformanceUtil.h in Sources */ = {isa = PBXBuildFile; fileRef = 524DFC9F1E114BC70026199B /* LHPerformanceUtil.h */; };
+		F221F6AD25FB4D2A00B57E88 /* UIViewController+GSFpsNotify.m in Sources */ = {isa = PBXBuildFile; fileRef = F221F6AC25FB4D2A00B57E88 /* UIViewController+GSFpsNotify.m */; };
+		F221F6B125FB4FA300B57E88 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F221F6B025FB4FA300B57E88 /* TestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +52,12 @@
 		524DFCA51E114FAF0026199B /* LHPerformanceConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHPerformanceConfig.h; sourceTree = "<group>"; };
 		524DFCA61E114FAF0026199B /* LHPerformanceConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHPerformanceConfig.m; sourceTree = "<group>"; };
 		524DFCA81E115B170026199B /* LHPerformanceTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHPerformanceTypes.h; sourceTree = "<group>"; };
+		F221F69E25FB427900B57E88 /* UIViewController+GSPerformanceNotify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GSPerformanceNotify.h"; sourceTree = "<group>"; };
+		F221F69F25FB427900B57E88 /* UIViewController+GSPerformanceNotify.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GSPerformanceNotify.m"; sourceTree = "<group>"; };
+		F221F6AB25FB4D2A00B57E88 /* UIViewController+GSFpsNotify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+GSFpsNotify.h"; sourceTree = "<group>"; };
+		F221F6AC25FB4D2A00B57E88 /* UIViewController+GSFpsNotify.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+GSFpsNotify.m"; sourceTree = "<group>"; };
+		F221F6AF25FB4FA300B57E88 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		F221F6B025FB4FA300B57E88 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +95,10 @@
 				524DFC841E114A6E0026199B /* AppDelegate.m */,
 				524DFC861E114A6E0026199B /* ViewController.h */,
 				524DFC871E114A6E0026199B /* ViewController.m */,
+				F221F6AF25FB4FA300B57E88 /* TestViewController.h */,
+				F221F6B025FB4FA300B57E88 /* TestViewController.m */,
+				F221F6AB25FB4D2A00B57E88 /* UIViewController+GSFpsNotify.h */,
+				F221F6AC25FB4D2A00B57E88 /* UIViewController+GSFpsNotify.m */,
 				524DFC891E114A6E0026199B /* Main.storyboard */,
 				524DFC8C1E114A6E0026199B /* Assets.xcassets */,
 				524DFC8E1E114A6E0026199B /* LaunchScreen.storyboard */,
@@ -99,6 +119,7 @@
 		524DFC981E114BC70026199B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F221F69D25FB421F00B57E88 /* Category */,
 				524DFCA81E115B170026199B /* LHPerformanceTypes.h */,
 				524DFC9B1E114BC70026199B /* LHPerformanceMonitorService.h */,
 				524DFC9C1E114BC70026199B /* LHPerformanceMonitorService.m */,
@@ -113,6 +134,15 @@
 			);
 			path = Classes;
 			sourceTree = SOURCE_ROOT;
+		};
+		F221F69D25FB421F00B57E88 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F221F69E25FB427900B57E88 /* UIViewController+GSPerformanceNotify.h */,
+				F221F69F25FB427900B57E88 /* UIViewController+GSPerformanceNotify.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -155,6 +185,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -186,9 +217,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F221F6A325FB47A300B57E88 /* UIViewController+GSPerformanceNotify.h in Sources */,
+				F221F6A425FB47A300B57E88 /* LHPerformanceTypes.h in Sources */,
+				F221F6A525FB47A300B57E88 /* LHPerformanceMonitorService.h in Sources */,
+				F221F6A625FB47A300B57E88 /* LHPerformanceConfig.h in Sources */,
+				F221F6A725FB47A300B57E88 /* LHPerformanceLabel.h in Sources */,
+				F221F6A825FB47A300B57E88 /* LHPerformanceStatusBar.h in Sources */,
+				F221F6B125FB4FA300B57E88 /* TestViewController.m in Sources */,
+				F221F6A925FB47A300B57E88 /* LHPerformanceUtil.h in Sources */,
 				524DFC881E114A6E0026199B /* ViewController.m in Sources */,
 				524DFCA21E114BC70026199B /* LHPerformanceMonitorService.m in Sources */,
+				F221F6AD25FB4D2A00B57E88 /* UIViewController+GSFpsNotify.m in Sources */,
 				524DFC851E114A6E0026199B /* AppDelegate.m in Sources */,
+				F221F6A025FB427900B57E88 /* UIViewController+GSPerformanceNotify.m in Sources */,
 				524DFCA11E114BC70026199B /* LHPerformanceLabel.m in Sources */,
 				524DFCA71E114FAF0026199B /* LHPerformanceConfig.m in Sources */,
 				524DFCA41E114BC70026199B /* LHPerformanceUtil.m in Sources */,

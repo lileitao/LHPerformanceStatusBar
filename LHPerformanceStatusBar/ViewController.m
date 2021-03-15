@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "LHPerformanceMonitorService.h"
+#import "TestViewController.h"
 
 @interface ViewController ()
 
@@ -18,16 +19,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    [LHPerformanceMonitorService run];
+    
+}
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self presentViewController:[TestViewController new] animated:YES completion:nil];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    NSLog(@"走了主类的viewWillDisappear");
+}
+#pragma mark - notify
 
+
+- (void)dealloc
+{
+    NSLog(@"走了 - %@", NSStringFromClass([self class]));
+}
 
 @end
